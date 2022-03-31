@@ -27,7 +27,7 @@ public class retoSistecreditoStepDefinitions {
     }
 
     @Then("it shows the process of the purchase completed successfully")
-    public void itShowsTheProcessOfThePurchaseCompletedSuccessfully(String question) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(question)));
+    public void itShowsTheProcessOfThePurchaseCompletedSuccessfully() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("Elige tu medio de pago",Answer.toThe()));
     }
 }
